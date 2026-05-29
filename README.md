@@ -24,13 +24,15 @@
 ## Install
 
 ```bash
-# Clone and build
+# npm (recommended)
+npx @morningljn/clean-node-modules          # run directly
+npm i -g @morningljn/clean-node-modules     # global install, command: cnm
+
+# or build from source
 git clone https://github.com/ArtLjn/clean-node-modules.git
 cd clean-node-modules
 npm install && npm run build
-
-# Copy to PATH
-cp dist/index.cjs ~/.local/bin/cnm && chmod +x ~/.local/bin/cnm
+cp dist/index.js ~/.local/bin/cnm && chmod +x ~/.local/bin/cnm
 ```
 
 ## Usage

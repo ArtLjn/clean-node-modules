@@ -24,13 +24,15 @@
 ## 安装
 
 ```bash
-# 克隆并构建
+# npm（推荐）
+npx @morningljn/clean-node-modules          # 直接运行
+npm i -g @morningljn/clean-node-modules     # 全局安装，命令：cnm
+
+# 或从源码构建
 git clone https://github.com/ArtLjn/clean-node-modules.git
 cd clean-node-modules
 npm install && npm run build
-
-# 复制到 PATH
-cp dist/index.cjs ~/.local/bin/cnm && chmod +x ~/.local/bin/cnm
+cp dist/index.js ~/.local/bin/cnm && chmod +x ~/.local/bin/cnm
 ```
 
 ## 使用
