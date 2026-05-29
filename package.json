@@ -1,0 +1,25 @@
+{
+  "name": "clean-node-modules",
+  "version": "1.0.0",
+  "description": "扫描并选择性清理 node_modules 目录，移到 macOS 废纸篓",
+  "type": "module",
+  "bin": {
+    "cnm": "./dist/index.cjs"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["node_modules", "clean", "trash", "macos"],
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^7.0.0",
+    "picocolors": "^1.1.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
