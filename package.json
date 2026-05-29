@@ -1,18 +1,35 @@
 {
-  "name": "clean-node-modules",
+  "name": "@morningljn/clean-node-modules",
   "version": "1.0.0",
-  "description": "扫描并选择性清理 node_modules 目录，移到 macOS 废纸篓",
-  "type": "module",
+  "description": "Scan and clean node_modules safely on macOS - moves to Trash, never rm",
   "bin": {
-    "cnm": "./dist/index.cjs"
+    "cnm": "./dist/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsx src/index.ts",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["node_modules", "clean", "trash", "macos"],
+  "keywords": [
+    "node-modules",
+    "clean",
+    "cleanup",
+    "trash",
+    "macos",
+    "cli",
+    "disk-space",
+    "interactive",
+    "typescript"
+  ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtLjn/clean-node-modules.git"
+  },
+  "homepage": "https://github.com/ArtLjn/clean-node-modules#readme",
   "dependencies": {
     "@inquirer/prompts": "^7.0.0",
     "picocolors": "^1.1.0"
